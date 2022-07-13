@@ -1,0 +1,126 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>SSHTML</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../estilo.css">
+		<script src="../componentes.js"></script>
+	</head>
+	<body>
+		<header>
+			<a title="Clique aqui para pagina inicial" href="../index.html"><h1 align="left">Desenvolvimento WEB - HTML - Tabelas e Links</h1></a>	
+		</header>
+		<app-menu></app-menu>
+		<div class="central">
+			<aside id="subMenu">
+				<ul type="square">
+					<a href="pgHTML.html"><li>HTML básico</li></a>
+					<a href="pgTableList.html"><li>Tabelas e listas</li></a>
+					<a href="pgMidias.html"><li>Imagem e Vídeo</li></a>
+					<a href="pgLinks.html"><li>Links</li></a>
+					<a href="pgSemantica.html"><li>HTML Semântica</li></a>
+					<a href="pgFormulario.html"><li>Formularios</li></a>
+				</ul>
+			</aside>
+			<section>
+				<h1>Tabelas e listas</h1>
+				<h3>Tabelas</h3>
+				<p>As tabelas HTML permitem que os desenvolvedores web organizem dados em linhas e colunas.<br>As tegs que definem uma tabela
+				são &lttr&gt que são as linhas da colunas e &lttd&gt que são os dados.</p>
+			
+				<div class="bloco">
+					<h4>Exemplo de tabela</h4>
+					<div class="subBloco">
+					<table>
+  						<tr>
+    							<td>Mateus</td>
+    							<td>Tobias</td>
+    							<td>Jessica</td>
+ 						 </tr>
+ 						 <tr>
+    							<td>16</td>
+    							<td>14</td>
+    							<td>10</td>
+  						</tr>
+						</table>
+
+					</div>
+				</div>
+				<h3>Codigo do exemplo</h3>
+				<div class="bloco">
+					<h4>Exemplo de tabela</h4>
+					<div class="subBloco">
+						<p>
+							&lt table &gt<br>
+							 &lt tr &gt<br>
+							 	&lt td &gt Email &lt/ td &gt<br>
+							 	&lt td &gt Tobias &lt/ td &gt<br>
+							 	&lt td &gt Linux &lt/ td &gt<br>
+							 &lt/ tr &gt<br>
+							 &lt tr &gt<br>
+								&lt td &gt 16 &lt/ td &gt<br>
+							    	&lt td &gt 14 &lt/ td &gt<br>
+							    	&lt td &gt 10 &lt/ td &gt<br>
+							 &lt/ tr &gt<br>
+							&lt/ table &gt
+						</p>
+					</div>
+				</div>
+				<h3>Cabeçalho da tabela</h3>
+				<p>Às vezes você quer que suas células sejam cabeçalhos, nesses casos use a tag &lt th &gt em vez da tag &lt td &gt</p>			
+				<div class="bloco">
+					<h4>Exemplo de tabela</h4>
+					<div class="subBloco">				
+						<table>
+  							<tr>
+   								<th>Pessoa 1</th>
+    								<th>Pessoa 2</th>
+    								<th>Pessoa 3</th>
+  							</tr>
+  							<tr>
+    								<td>Mateus</td>
+    								<td>Tobias</td>
+    								<td>Jessica</td>
+  							</tr>
+							<tr>
+    								<td>16</td>
+    								<td>14</td>
+    								<td>10</td>
+  							</tr>
+						</table>
+					</div>
+				</div>
+				<h3>Preenchimento e espaçamento de tabela</h3>
+				<p>As tabelas HTML podem ajustar o preenchimento dentro das células e também o espaço entre as células</p>
+				<h4>Preenchimento de células</h4>
+				<div class="bloco">
+					<h4>Exemplo de preenchimento</h4>
+					<div class="subBloco">
+						<p>
+							th, td {<br>
+							  &nbsp padding: 15px;<br>
+							}
+						</p>
+					</div>
+				</div>
+
+				<h4>Espaçamento entre células</h4>
+				<p>O spacing é o espaço entre cada célula. Por padrão, o espaço é definido como 2 pixels.<br>
+				Para alterar o espaço entre as células da tabela, use a border-spacing nas propriedades do CSS no table elemento:</p>
+				<div class="bloco">
+					<h4>Exemplo de espaçamento</h4>
+					<div class="subBloco">
+						<p>
+							table {<br>
+							  &nbsp border-spacing: 30px;<br>
+							}						
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+	<footer>
+		<h2 align="center" >&copy;Desenvolvido para Fins Acadêmicos</h2>
+	</footer>
+</html>

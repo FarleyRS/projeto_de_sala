@@ -1,0 +1,65 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>SSHTML</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../estilo.css">
+		<script src="../componentes.js"></script>
+	</head>
+	<body>
+		<header>
+			<a title="Clique aqui para pagina inicial" href="../index.html"><h1 align="left">Desenvolvimento WEB - Imagem e Vídeo</h1></a>	
+		</header>
+		<app-menu></app-menu>
+		<div class="central">
+			<aside id="subMenu">
+				<ul type="square">
+					<a href="pgHTML.html"><li>HTML básico</li></a>
+					<a href="pgTableList.html"><li>Tabelas e listas</li></a>
+					<a href="pgMidias.html"><li>Imagem e Vídeo</li></a>
+					<a href="pgLinks.html"><li>Links</li></a>
+					<a href="pgSemantica.html"><li>HTML Semântica</li></a>
+					<a href="pgFormulario.html"><li>Formularios</li></a>
+				</ul>
+			</aside>
+			<section>
+				<h1>Imagem</h1>
+				<p>Estilizar imagens usando CSS</p>
+				<h3>Imagens arredondadas</h3>
+				<p>Use a border-radius para criar imagens arredondadas</p>
+				<div class="blocoDeImagens">
+					<img class="img1" src="..\imagens\pgHTML\pgImgCss\paris.jpg" alt="Paris.jpg" title="Imagem de um lugar de Paris">
+					<img class="img2" src="..\imagens\pgHTML\pgImgCss\paris.jpg" alt="Paris.jpg" title="Imagem de um lugar de Paris">
+				</div>
+				   <div class="bloco">
+					<h4>Exemplo</h4>
+					<div class="subBloco">
+						<p>
+							img {	border-radius: 10px;}<br>
+						  img {  border-radius: 50%; }		
+				     </p>
+				  </div>
+				</div>
+				<h3>Imagens responsivas</h3>
+				<p>As imagens responsivas se ajustarão automaticamente ao tamanho da tela</p>
+				<div class="blocoDeImagens">
+				<img class="imgResp" src="..\imagens\pgHTML\pgImgCss\img_respons.jpg" alt="img_respons" title="Imagem aleratoria">
+				</div>
+				<div class="bloco">
+					<h4>Exemplo</h4>
+					<div class="subBloco">
+						<p>
+							.imgResp{<br>
+								&nbsp max-width: 100%;<br>
+							  &nbsp	height: auto;<br>
+							}				
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+	<footer>
+		<h2 align="center" >&copy;Desenvolvido para Fins Acadêmicos</h2>
+	</footer>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="Stylesheet"  href="style.css">
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="title">
+                    <h1>Sobre Photoshop</h1>
+                </div>
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="quiz.html">Quiz</a></li>
+                   <li><a href="site-com-menu-responcivo/index.html">Atividades</a></li>
+                   <li><a href="https://machadoconsultoria.herokuapp.com/">Site em Angular</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="section" >
+            <div class="quiz-wrapper">       
+                <div id="questionBox" class="question">
+                    Sample Question
+                </div>
+                <div class="options">
+                    <ul id="ul">
+                        <li id="opt1" onclick="button(this)"></li>
+                        <li id="opt2" onclick="button(this)"></li>
+                        <li id="opt3" onclick="button(this)"></li>
+                        <li id="opt4" onclick="button(this)"></li>
+                    </ul>
+                </div>
+                <div class="score">
+                    <div class="next">
+                        <button id="btnNext" type="button" onclick="next()">
+                          Next
+                        </button>
+                    </div>
+                    <div class="score-card">
+                        SCORE: <span id="scoreCard">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scriptQuiz.js"></script>
+        <footer>
+            <p>
+                Desenvolvido por um cara ai
+            </p>
+        </footer>
+        
+    </body>
+    
+</html>

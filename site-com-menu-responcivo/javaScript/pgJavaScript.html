@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>SSHTML</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../estilo.css">
+		<script src="script.js"></script>
+		<script src="../componentes.js"></script>
+	</head>
+	<body>
+		<header>
+			<a title="Clique aqui para pagina inicial" href="../index.html"><h1 align="left">Desenvolvimento WEB - JavaScript</h1></a>	
+		</header>
+		<app-menu></app-menu>
+		<div class="central">
+			<aside id="subMenu">
+				
+			</aside>
+			<section>
+				<h1 id="JavaScript">JavaScript </h1>
+				<p align="justify">O JavaScript, como o próprio	nome sugere, é uma linguagem de scripting. Uma linguagem de scripting é comumente	 definida como uma linguagem de	 programação que permite ao programador controlar uma ou mais aplicações de terceiros. No caso do JavaScript, podemos controlar alguns comportamentos dos navegadores através de trechos de código que são enviados	na página HTML.</p>
+				<p>Outra característica comum nas linguagens de scripting é que normalmente elas são linguagens interpretadas, ou seja, não dependem de compilação para serem executadas. Essa característica é presente no JavaScript: o código é interpretado e executado conforme é lido pelo navegador, linha a linha, assim como o HTML. O JavaScript também possui grande tolerância a erros, uma vez que conversões automáticas são realizadas durante operações. Como será visto no decorrer das explicações, nem sempre essas conversões resultam em algo esperado, o que pode ser fonte de muitos bugs, caso não conheçamos bem esse mecanismo.</p> 
+				<p>O script do programador é enviado com o HTML para o navegador, mas como o navegador saberá diferenciar o script de um código html? Para que essa diferenciação seja possível, é necessário envolver o script dentro da tag.</p>
+				<h3>A TAG SCRIPT</h3>
+				<p>Para	inserirmos um código JavaScript em uma página, é necessário utilizar a tag &lt script &gt:</p>
+
+				<div class="bloco">
+					<h3>Exemplo</h3>
+					<div class="subBloco">
+						<p>
+							&ltscript&gt<br>
+							&nbsp alert("Olá, Mundo!");<br>
+							&lt/script&gt
+						</p>
+					</div>
+				</div>
+				<br>
+				<a href="pgExemploJs.html" target=_blank>Veja você mesmo</a>
+				<p>Podemos tambem referenciar o um codigo JavaScript externo</p>
+				<div class="bloco">
+					<h3>Exemplo</h3>
+					<div class="subBloco">
+						<p>
+							
+							&ltscript
+							&nbsp type="JavaScript src="meuJavaScript.js"&gt&lt/script&gt
+						</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<h2 align="center" >&copy;Desenvolvido para Fins Acadêmicos</h2>
+		</footer>
+	</body>
+	
+</html>

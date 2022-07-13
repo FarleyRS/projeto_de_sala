@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>SSHTML</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../estilo.css">
+		<script src="../componentes.js"></script>
+	</head>
+	<body>
+		<header>
+			<a title="Clique aqui para pagina inicial" href="../index.html"><h1 align="left">Desenvolvimento WEB - Formulários</h1></a>	
+		</header>
+		<app-menu></app-menu>
+		<div class="central">
+			<aside id="subMenu">
+				<ul type="square">
+					<a href="pgHTML.html"><li>HTML básico</li></a>
+					<a href="pgTableList.html"><li>Tabelas e listas</li></a>
+					<a href="pgMidias.html"><li>Midias</li></a>
+					<a href="pgLinks.html"><li>Links</li></a>
+					<a href="pgSemantica.html"><li>HTML Semântica</li></a>
+					<a href="pgFormulario.html"><li>Formularios</li></a>
+				</ul>
+			</aside>
+			<section>
+				<h1>Formularios</h1>
+				<p>Um formulário HTML é usado para coletar 
+				a entrada do usuário. A entrada do usuário é mais frequentemente enviada a um servidor para processamento.</p>
+				<h3>Exemplo</h3>
+				<form action="" method="get">
+					<label>Nome:</label>
+					<input type="text" id="fnome" name="fnome">
+					<label>Senha:</label>
+					<input type="password" id="fsenha" name="fnome">
+					<input type="submit" id="fenviar">
+				</form>
+				<p>Preencha os dados e envie, apos observe na url que os dados estão amostra, isso porque 
+				na teg &ltform&gt foi definido o metodo (method) de envio "get" na qual anexa os dados do formulário à URL, em pares nome/valor
+				ele é util quando o usuario útil para envios de formulários em que um usuário deseja marcar o resultado
+				GET é bom para dados não seguros, como strings de consulta no Google </p>
+				<h3>Exemplo 2</h3>
+				<form>
+					<label>Selecione o carro:</label>
+					<select id="carros" name="carros" >
+  						<option value="volvo">Volvo</option>
+  						<option value="Subaru">Subaru</option>
+  						<option value="fiat">Fiat</option>
+  						<option value="audi">Audi</option>		
+					</select><br>
+					<input type="submit" value="Enviar">
+				</form>
+				<h3>Exemplo 3</h3>
+				<form>
+					<textarea name="message" rows="5" cols="30">
+						Atirei o pau no gato, mas o gato não morreu, dona chica admirada do berro que o gato deu, Minhau!!! 
+					</textarea><br>
+					<button type="button" onclick="alert('E ai vei!')">Clica ai!</button>
+				</form>
+				<h3>Exemplo 4</h3>
+				<p>O &ltfieldset&gtelemento é usado para agrupar dados relacionados em um formulário.<br>
+				O &ltlegend&gt elemento define uma legenda para o &ltfieldset&gt elemento.</p>
+				<form>
+  					<fieldset>
+    					<legend>Personalidade:</legend>
+   						<label>Nome:</label><br>
+    						<input type="text" id="fnome" name="fnome" value="Carlito"><br>
+    						<label>Sobrenome:</label><br>
+    						<input type="text" id="lnome" name="lnome" value="Jack"><br><br>
+   						<input type="submit" value="Enviar">
+  					</fieldset>
+				</form>
+				<h3>Exemplo 4</h3>
+				<form>
+					<input type="radio" id="html" name="fav_linguage" value="HTML">
+					<label>HTML</label><br>
+					<input type="radio" id="html" name="fav_linguage" value="CSS">
+					<label>CSS</label><br>
+					<input type="radio" id="html" name="fav_linguage" value="JavaScript">
+					<label>JavaScript</label><br>
+					<input type="submit">
+				</form>
+			</section>
+		</div>
+	</body>
+	<footer>
+		<h2 align="center" >&copy;Desenvolvido para Fins Acadêmicos</h2>
+	</footer>
+</html>

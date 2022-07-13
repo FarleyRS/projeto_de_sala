@@ -1,0 +1,245 @@
+body{
+	background-image:url('imagens/imgFundo.jpg');
+	background-size: auto;
+	background-repeat: repeat-y;
+}
+header{
+	background-color: #696969;
+	width: auto;
+	height: 100px;
+	text-align: left;
+	padding-top: 6px;
+	max-width: 1920px;
+	padding-left: 10px;
+}
+header a{
+	text-decoration: none;
+	color: white;
+}
+#menu{
+	background-color: #3CB371;
+	width:auto;
+	height: 70px;
+	max-width: 1920px;
+	text-align: center;
+	padding-top:20px;
+}
+#menu ul{
+	list-style: none;
+}
+#menu ul li{
+	display: inline;
+	margin-right:10px;
+	padding:15px;
+	background-color: aliceblue;
+}
+#menu a{
+	text-decoration: none;
+	color: black;
+}
+#subMenu{
+	width: 200px;
+	height: 100%;
+	background-color: lightgrey;
+	margin-right: 10px;
+}
+
+#subMenu li{
+	list-style: none;
+	text-align:center;
+	background-color:#C0C0C0;
+	padding:10px 0px 10px 0px;
+	margin:5% 5% 5% -20%;
+}
+#subMenu a{
+	text-decoration: none;
+	color: black;
+}
+.central{
+	width: 100%;
+	height: auto;
+	max-width: 1920px;
+	display: flex;
+ 	justify-content: center;
+}
+section{
+	background-color: white;
+	width: 70%;
+	height: auto;
+	font-size: 20px;
+	padding:0px 50px 20px 50px;
+}
+.botao{
+	width: 80px;
+	position: fixed;
+	bottom: 0;
+	margin-left: 90%;
+	margin-bottom: 10%;
+}
+.botao ul{
+	background-color: limegreen;
+	border-radius: 50%;
+}
+.botao li{
+	text-align:center;	
+	list-style: none;
+	margin-left: -45px;
+	padding:50%;
+}
+.botao a{
+	text-decoration: none;
+	font-size: 25px;
+}
+.bloco{
+	border: solid;
+	background-color:#3CB371 ;
+	padding: 20px;
+	filter: drop-shadow(20px 10px);
+	width:71%;
+	margin-left: 10%;
+}
+.subBloco{
+	border: solid;
+	background-color: white;
+	padding:10px;
+}
+footer{
+	background-color: grey;
+	height: 70px;
+	width: auto;
+	max-width: 1920px;
+	padding: 10px 0px 10px 0px;
+	position: relative;
+   	bottom: 0;
+}
+table{
+	padding:5px;
+  	border:2px solid red;
+ 	border-spacing: 5px;
+}
+td{
+	padding:5px;
+  	border:2px solid black;
+}
+.index{
+	border: none;
+}
+.index td{
+	border: none;
+}
+.blocoDeImagens{
+	width:100%;
+	height:auto;
+}
+.img1{
+	border-radius:10px;
+}
+.img2{
+	border-radius:50%;
+}
+.imgResp{
+	max-width: 100%;
+  	height: auto;
+}
+
+@media screen and (max-width: 1080px){
+	body{
+		width: auto;
+	}
+	header{
+		width: auto;
+		max-width: 1080px;
+	}
+
+	.central{
+		max-width: 1080px;
+	}
+	section{
+		background-color: white;
+		width: auto;
+		height: auto;
+		font-size: 50px;
+	}
+	section h1{
+		margin-top: 0px;
+	}
+	footer{
+		height: auto;
+		width: 100%;
+		max-width: 1080px;
+		padding: 10px 0px 10px 0px;
+    }
+
+	#menu{
+		background-color: #3CB371;
+		width:auto;
+		height: auto;
+		max-width: 1080px;
+		text-align: center;
+		font-size: 50px;
+		padding: 5px;
+	}
+	#menu ul{
+		list-style: none;
+		height: auto;
+	}
+	#menu ul li{
+		display: block;
+		margin-right:10px;
+		padding:15px;
+	}
+	#menu a{
+		text-decoration: none;
+		color: black;
+	}
+	#subMenu{
+		width: auto;
+		height: 100%;
+		background-color: lightgrey;
+		margin-right: 0px;
+	}
+
+	#subMenu ul{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	#subMenu li{
+		list-style: none;
+	    text-align: center;
+	    background-color: #C0C0C0;
+	    padding: 10px 0px 10px 0px;
+	    margin: 0px 5% 10px 0px;
+	    font-size: 40px;
+
+	}
+	#subMenu a{
+		text-decoration: none;
+		color: black;
+	}
+	.central{
+		width: 100%;
+		height: auto;
+		max-width: 1080px;
+		display: block;
+	 	justify-content: center;
+	}
+	section form{
+		background-color: red;
+	}
+	section form input{
+		width: 300px;
+		height: 50px;
+		font-size: 40px;
+	}
+	section form select{
+		width: 300px;
+		height: 50px;
+		font-size: 40px;
+	}
+	section form button{
+		width: 300px;
+		height: 50px;
+		font-size: 40px;
+	}
+}

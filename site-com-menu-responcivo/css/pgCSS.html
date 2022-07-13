@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<title>SSHTML</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../estilo.css">
+		<script src="../componentes.js"></script>
+	</head>
+	<body>
+		<header>
+			<a title="Clique aqui para pagina inicial" href="../index.html"><h1 align="left">Desenvolvimento WEB - CSS</h1></a>	
+		</header>
+		<app-menu></app-menu>
+		<div class="central">
+			<aside id="subMenu">
+				<ol>
+					<a href="#sintax"><li>Sintaxe CSS </li></a>
+					<a href="#seletores"><li>Seletores</li></a>
+					<a href="#comoFazer"><li>Como adicionar na página</li></a>
+				</ol>
+			</aside>
+			<section>
+				<h2> Sintax CSS </h2>
+			
+			<p id="sintax">
+				<img src="../imagens/pgCSS/sintaxCss.png" title="Sintax do CSS" heigth="300px"><br>
+				O seletor aponta para o elemento HTML que você deseja estilizar.<br>
+
+				O bloco de declaração contém uma ou mais declarações separadas por ponto e vírgula.<br>
+
+				Cada declaração inclui um nome de propriedade CSS e um valor, separados por dois pontos.<br>
+
+				Várias declarações CSS são separadas por ponto e vírgula e os blocos de declaração são cercados por chaves.<br>
+				<h3> Exemplo</h3>
+				<img src="../imagens/pgCSS/exCssSintax.png" title="Exemplo De sintax CSs">
+				<p>
+					Neste exemplo, todos os elementos &ltp&gt serão alinhados ao centro, com uma cor de texto vermelha:
+
+					<ul>
+						<li>p é um seletor em CSS (ele aponta para o elemento HTML que você deseja estilizar: &ltp&gt).</li>
+						<li>color é uma propriedade, e red é o valor da propriedade</li>
+						<li>text-align é uma propriedade, e center é o valor da propriedade</li>
+					</ul>
+				</p>
+			</p>
+			<p id="seletores">
+				<h2>Seletores CSS</h2>
+				<p>O seletor de elemento seleciona elementos HTML com base no nome do elemento</p>
+				<h3>O seletor de id CSS</h3>
+				<img src="../imagens/pgCSS/exCssSintId.png" title="Exemplo de utilização de ID no CSS">
+				<p>
+					O seletor id usa o atributo id de um elemento HTML para selecionar um elemento específico.<br>
+	
+					O id de um elemento é único dentro de uma página, então o seletor de id é usado para selecionar um elemento único!<br>
+
+					Para selecionar um elemento com um id específico, escreva um caractere hash (#), seguido do id do elemento.
+				</p>
+			</p>	
+			<p id="comoFazer">
+				<h3>Três maneiras de inserir CSS</h3>
+				<p>Existem três maneiras de inserir uma folha de estilo:</p>
+
+				<ul>
+					<li>CSS externo</li>
+					<li>CSS interno</li>
+					<li>CSS embutido</li>
+				</ul>
+			</p>
+			<p>
+				<h2>CSS externo</h2>
+				<p>Com uma folha de estilo externa, você pode alterar a aparência de um site inteiro alterando apenas um arquivo!
+
+				Cada página HTML deve incluir uma referência ao arquivo de folha de estilo externo dentro do elemento &ltlink&gt, dentro da seção head.
+			
+				</p>
+				<h3>Exemplo</h3>
+				<img src="../imagens/pgCSS/exCssExter.png" title="Exemplo de CSS externo">
+				<p>Uma folha de estilo externa pode ser escrita em qualquer editor de texto e deve ser salva com uma extensão .css.
+
+				O arquivo .css externo não deve conter tags HTML.</p>
+				
+				<h2>CSS interno</h2>
+				<p>Uma folha de estilo interna pode ser usada se uma única página HTML tiver um estilo único.
+
+				<br>O estilo interno é definido dentro do elemento &ltstyle&gt, dentro da seção head.<p>
+				<img src="../imagens/pgCSS/exCssIntern.png" title="Exemplo de CSS interno">
+
+				<h2>CSS embutido</h2>
+				<p>Um estilo embutido pode ser usado para aplicar um estilo único para um único elemento.
+				Para usar estilos embutidos, adicione o atributo style ao elemento relevante. O atributo style pode conter qualquer propriedade CSS.</p>
+				<img src="../imagens/pgCSS/exCssImbut.png" title="Exemplo de CSS embutido">
+
+				<h2>Ordem em cascata</h2>
+				<p>Qual estilo será usado quando houver mais de um estilo especificado para um elemento HTML?</p>
+				<p>Todos os estilos em uma página serão "cascatados" em uma nova folha de estilo "virtual" de acordo com as seguintes regras, onde o número um tem a prioridade mais alta</p>
+				<p>
+					<ol>
+						<li>Estilo embutido (dentro de um elemento HTML)</li>
+						<li>Folhas de estilo externas e internas (na seção principal)</li>
+						<li>Padrão do navegador</li>
+					</ol>
+				</p>
+				<p>Portanto, um estilo embutido tem a prioridade mais alta e substituirá os estilos externos e internos e os padrões do navegador.<p>
+			</p>
+			</section>
+			<div class="botao">
+				<ul>
+					<a href="#top"><li>Topo</li></a>
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+	<footer>
+		<h2 align="center" >&copy;Desenvolvido para Fins Acadêmicos</h2>
+	</footer>
+</html>
